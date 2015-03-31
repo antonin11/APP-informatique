@@ -1,2 +1,0 @@
-# APP-informatique
-hello world
