@@ -4,7 +4,8 @@
 	<title>Accueil</title>
 	<meta charset = "utf-8"/>
 </head>
-<body>
+<body>lkjdhsc
 	<?php include("header.php"); ?>
 </body>
 </html>
+jhsdgc
