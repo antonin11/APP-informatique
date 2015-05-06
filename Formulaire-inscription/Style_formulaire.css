@@ -1,6 +1,7 @@
 p
 {
 	font-size: 12px;
+
 }
 
 
@@ -12,6 +13,7 @@ legend
 h1
 {
 	font-size: 25px;
+	color: white;
 	
 }
 
@@ -19,12 +21,14 @@ h1
 h2
 {
 	font-size: 15px;
+	color: white;
 
 }
 
 h3
 {
 	font-size: 13px;
+	color: white;
 	
 }
 
@@ -32,6 +36,7 @@ h3
 h4
 {
 	font-size: 11px;
+	color: white;
 }
 *
 {
@@ -42,7 +47,7 @@ h4
 
 legend
 {
-	color: grey;
+	color: black;
 	font-size: 18px;
 }
 
@@ -51,6 +56,10 @@ fieldset
 	width: 40%;
 	display: inline-block;
 	margin-top: 25px;
+  background-color: rgba(223, 232, 226 , 0.8);
+
+	opacity: 0,6;
+
 }
 
 .compte_formulaire
@@ -69,4 +78,16 @@ fieldset
 	position: fixed;
 
 
+}
+body
+{
+	background: url("fruits_et_legumes.jpeg") fixed no-repeat center;
+	background-size: cover;
+    background-
+}
+
+
+.background: 
+{
+	
 }
