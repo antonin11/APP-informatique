@@ -122,15 +122,13 @@
 		
 
 <?php
-	global $bdd;
-   if ($bdd = mysqli_connect('localhost', 'root', 'root', 'I_NEED_EAT'))
-   {
-	// Si la connexion a réussi, rien ne se passe.
-	echo 'Connecté !!.'; 
-}
-else // Mais si elle rate…
+   try
 {
-	echo 'Erreur'; // On affiche un message d'erreur.
+	$bdd = new PDO('mysql:host=localhost; dbname=I_NEED_EAT;charset=utf8', 'root', '');
+}
+catch (Exception $e)
+{
+	die('erreur:'.$e->getMessage());
 }
 ?>
 
