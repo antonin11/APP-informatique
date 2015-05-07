@@ -1,7 +1,7 @@
 <article>
 	<p>
-		<form action="traitement.php" method="post">
-			<input type="email" name="email" placeholder="Email"/>
+		<form action="traitement_connection.php" method="post">
+			<input type="text" name="pseudo" placeholder="pseudo"/>
 			<input type="password" name="pass" placeholder="Mot de passe"/>
 			<input type="submit" value="Se connecter"/>
 		</forme>

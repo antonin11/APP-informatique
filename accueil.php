@@ -5,6 +5,6 @@
 	<meta charset = "utf-8"/>
 </head>
 <body>
-	<?php include("header.php"); ?>
+	<?php include("header/header.php"); ?>
 </body>
 </html>

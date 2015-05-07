@@ -1,13 +1,13 @@
 <article>
 	<p>
-		Bienvenu <?php echo '$pseudo' ?>
+		Bienvenu <?php echo $_SESSION['pseudo'] ?>
 	</p>
 	<a href="#"> 
 		<p> Mon compte </p> 
 	</a>
 	<p>
 		<a href="##"> 
-			<img src="../images/panier.png" alt="image du panier" id="panier"/>
+			<img src="images/panier.png" alt="image du panier" id="panier"/>
 			<strong>Panier</strong>
 		</a>
 	</p>

@@ -1,3 +1,4 @@
+	<?php session_start(); ?>
 	<header>	
 		<article id="log">
 			<p>
@@ -14,7 +15,16 @@
 			</form>
 		</div>
 		<section>		
-			
+			<?php 
+			if(isset($_SESSION['pseudo']))
+				{
+					include("connection_connecte.php"); 
+				}
+			else
+				{
+					include("connection_non_connecte.php");
+				}
+			?>
 		</section>
 		<nav>
 			<ul class="menu">
