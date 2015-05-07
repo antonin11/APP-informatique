@@ -13,11 +13,3 @@
 		<a href="récupérer_mot_de_passe.php"> Mot de passe oublié ? </a>
 	</p>
 </article>	
-<aside>
-	<p>
-		<a href="##"> 
-			<img src="images/panier.png" alt="image du panier" id="panier"/>
-			<strong>Panier</strong>
-		</a>
-	</p>
-</aside>

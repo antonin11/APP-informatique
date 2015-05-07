@@ -1,14 +1,15 @@
 <article>
 	<p>
-		Bienvenu <?php echo '$pseudo' ?>
+		<form action="traitement.php" method="post">
+			<input type="email" name="email" placeholder="Email"/>
+			<input type="password" name="pass" placeholder="Mot de passe"/>
+			<input type="submit" value="Se connecter"/>
+		</forme>
 	</p>
-	<a href="#"> 
-		<p> Mon compte </p> 
-	</a>
-	<p>
-		<a href="##"> 
-			<img src="../images/panier.png" alt="image du panier" id="panier"/>
-			<strong>Panier</strong>
-		</a>
+	<p class="complement_connection">
+		<a href="formulaire.php"> Pas encore inscrit ? </a>
 	</p>
-</article>
+	<p class="complement_connection">
+		<a href="récupérer_mot_de_passe.php"> Mot de passe oublié ? </a>
+	</p>
+</article>	
