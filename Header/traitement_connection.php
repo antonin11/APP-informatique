@@ -10,16 +10,17 @@ catch (Exception $e)
 $reponse = $bdd->query('SELECT * FROM utilisateurs');
 while ($donnees = $reponse->fetch())
 {
-	if($donnees['pseudo']==$_POST['pseudo'])
+	if($donnees['Pseudo']==$_POST['pseudo'])
 	{
 		if($donnees['M_d_P']==$_POST['pass'])
 		{
-			$_SESSION['pseudo']= $donnees['pseudo'];
+			$_SESSION['pseudo']= $donnees['Pseudo'];
 		}
 	}
 	else
-	}
 	{
+		unset($_POST);
+	}
 }
 
 $reponse->closeCursor();
