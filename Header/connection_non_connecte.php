@@ -1,6 +1,6 @@
 <article>
 	<p>
-		<form action="header/header.php" method="post">
+		<form action="header/traitement_connection.php" method="post">
 			<input type="text" name="pseudo" placeholder="pseudo"/>
 			<input type="password" name="pass" placeholder="Mot de passe"/>
 			<input type="submit" value="Se connecter"/>
