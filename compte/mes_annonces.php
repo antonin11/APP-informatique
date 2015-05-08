@@ -33,10 +33,16 @@ session_start();
 						<strong>titre</strong> : <?php echo $donnees['Nom']; ?> <br/>
 					</p>
 					<p>
+						Nombre de membre suivant la vente : <?php echo $donnees['Nbr_visite']; ?>
+					</p>
+					<p>
 						<strong>prix</strong> : <?php echo $donnees['Prix']; ?>
 						<strong>Quantité restante</strong> : <?php echo $donnees['Quantite']; ?>
 						Date de mise en vente : <?php echo $donnees['Date']; ?>
 					</p>
+					<form action="../suppression/supprimer.php" method="post">
+						<input type="submit" value="supprimer"/>
+					</form>
 					<?php
 				}
 				?>
