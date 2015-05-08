@@ -8,11 +8,11 @@
 	{
 		die('erreur :' . $e->getMessage());
 	}
-	$reponse = $bdd -> prepare('SELECT mdp FROM utilisateurs WHERE Pseudo = ? ');
+	$reponse = $bdd -> prepare('SELECT Mdp FROM utilisateurs WHERE Pseudo = ? ');
 	$reponse -> execute(array($_POST['pseudo']));
 	$donnes = $reponse-> fetch();
 
-	if( $donnes[0] == $_POST['Mdp'])
+	if( $donnes[0] == $_POST['pass'])
 		{
 			$_SESSION['pseudo']= $_POST['pseudo'];
 			$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'index.php';
@@ -23,6 +23,5 @@
 		$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'index.php';
 		header('Location: ' . $referer);
 	}
-}
 $reponse->closeCursor();
 ?>
