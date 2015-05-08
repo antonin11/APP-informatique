@@ -11,7 +11,6 @@ session_start();
 	<?php 
 	if(isset($_SESSION['pseudo']))
 	{
-		$pseudo=$_SESSION['pseudo'];
 		include("../invariants/header.php"); ?>	
 		<div class="mes_annonces">
 			<article class="ventes_en_cours">
@@ -25,7 +24,8 @@ session_start();
 				{
 					die('erreur : '.$e->getmessage());
 				}
-				$reponse = $bdd->query('SELECT * FROM annonces WHERE Auteur='".$pseudo."'');
+				$reponse = $bdd->prepare('SELECT * FROM annonces WHERE Auteur = ?');
+				$reponse -> execute(array($_SESSION['pseudo']));
 				while ($donnees = $reponse->fetch())
 				{
 					?>
