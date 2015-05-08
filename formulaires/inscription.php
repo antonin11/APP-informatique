@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="Style_formulaire.css" />
+		<link rel="stylesheet" href="../css/Style_formulaire.css" />
 		<title>Formualire d'inscription</title>
 	</head>
 
@@ -38,7 +38,7 @@
 		
 		<fieldset class="informations_formulaire">
 			<legend>Vos coordonees</legend>
-			<form method="post" action="formulaire_inscription2.php">
+			<form method="post" action="formulaire_inscription.php">
 			<p>
 				<label for="Civilite"> Civilite:</label><br />
 				<select name="Civilite" id="Civilite">

@@ -8,11 +8,11 @@
 	</a>
 	<p>
 		<a href="##"> 
-			<img src="images/panier.png" alt="image du panier" id="panier"/>
+			<img src="../images/panier.png" alt="image du panier" id="panier"/>
 			<strong>Panier</strong>
 		</a>
 	</p>
 	<p>
-		<a href="header/traitement.php">Déconnexion</a>
+		<a href="../invariants/traitement.php">Déconnexion</a>
 	</p>
 </article>

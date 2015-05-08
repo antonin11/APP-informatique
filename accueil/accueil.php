@@ -6,6 +6,6 @@
 	<meta charset = "utf-8"/>
 </head>
 <body>
-	<?php include("header/header.php"); ?>
+	<?php include("../invariants/header.php"); ?>
 </body>
 </html>
