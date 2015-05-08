@@ -48,6 +48,6 @@ else
 	echo 'Vous devez être inscrit pour accéder à cette page';
 	include("../formulaires/inscription.php");
 }
-	?>	
+	?>	tt
 </body>
 </html>
