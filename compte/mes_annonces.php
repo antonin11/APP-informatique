@@ -28,25 +28,60 @@ session_start();
 				$reponse -> execute(array($_SESSION['pseudo']));
 				while ($donnees = $reponse->fetch())
 				{
-					?>
-					<p>
-						<strong>titre</strong> : <?php echo $donnees['Nom']; ?> <br/>
-					</p>
-					<p>
-						Nombre de membre suivant la vente : <?php echo $donnees['Nbr_visite']; ?>
-					</p>
-					<p>
-						<strong>prix</strong> : <?php echo $donnees['Prix']; ?>
-						<strong>Quantité restante</strong> : <?php echo $donnees['Quantite']; ?>
-						Date de mise en vente : <?php echo $donnees['Date']; ?>
-					</p>
-					<p><a href="../suppression/supprimer.php?annonce=<?php echo $donnees['id_annonce'];?>">
-						<input type="submit" value="supprimer" name="supprimer"/>
-					</a>
+					if($donnees['Quantite']!=0)
+					{
+						?>
+						<p>
+							<strong>titre</strong> : <?php echo $donnees['Nom']; ?> <br/>
+						</p>
+						<p>
+							Nombre de membre suivant la vente : <?php echo $donnees['Nbr_visite']; ?>
+						</p>
+						<p>
+							<strong>prix</strong> : <?php echo $donnees['Prix']; ?>
+							<strong>Quantité restante</strong> : <?php echo $donnees['Quantite']; ?>
+							Date de mise en vente : <?php echo $donnees['Date']; ?>
+						</p>
+						<p><a href="../suppression/supprimer.php?annonce=<?php echo $donnees['id_annonce'];?>">
+							<input type="submit" value="supprimer" name="supprimer"/>
+						</a>
+						<?php
+					}
+				}
+				$reponse->closeCursor();
+				?>
+			</article>
+			<article class="vente_terminées">	
+				<strong><h1>Vente terminées</h1></strong>
+				<?php
+				$reponse = $bdd->prepare('SELECT * FROM annonces WHERE Auteur = ?');
+				$reponse -> execute(array($_SESSION['pseudo']));
+				while ($donnees = $reponse->fetch())
+				{
+					if($donnees['Quantite']==0)
+					{
+						?>
+						<p>
+							<strong>titre</strong> : <?php echo $donnees['Nom']; ?> <br/>
+						</p>
+						<p>
+							Nombre de membre suivant la vente : <?php echo $donnees['Nbr_visite']; ?>
+						</p>
+						<p>
+							<strong>prix</strong> : <?php echo $donnees['Prix']; ?>
+							<strong>Quantité restante</strong> : <?php echo $donnees['Quantite']; ?>
+							Date de mise en vente : <?php echo $donnees['Date']; ?>
+						</p>
+						<p><a href="../suppression/supprimer.php?annonce=<?php echo $donnees['id_annonce'];?>">
+							<input type="submit" value="supprimer" name="supprimer"/>
+						</a>
 					<?php
+					}
 				}
 				?>
-				</article>
+				$reponse->closeCursor();
+			</article>
+		</div>
 	<?php
 	}
 else
