@@ -40,9 +40,9 @@ session_start();
 						<strong>Quantité restante</strong> : <?php echo $donnees['Quantite']; ?>
 						Date de mise en vente : <?php echo $donnees['Date']; ?>
 					</p>
-					<form action="../suppression/supprimer.php" method="post">
-						<input type="submit" value="supprimer"/>
-					</form>
+					<p><a href="../suppression/supprimer.php?annonce=<?php echo $donnees['id_annonce'];?>">
+						<input type="submit" value="supprimer" name="supprimer"/>
+					</a>
 					<?php
 				}
 				?>
