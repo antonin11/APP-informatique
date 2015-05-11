@@ -7,16 +7,7 @@
 	<title> cible annonce </title>
 </head>
 <?php
-try
-{
-
-	$bdd = new PDO('mysql:host=localhost;dbname=i_need_eat;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-
-        die('Erreur : '.$e->getMessage());
-}
+include("../bdd/connection.php");
 $req = $bdd->prepare('INSERT INTO `i_need_eat`.`annonces` (`categorie`, `article`,`region`, `prix_kg`, `quantite`,`titre_annonce`, `texte_annonce`) VALUES (:categorie,:article, :region, :prix_kg, :quantite, :titre_annonce)');
 $req->execute(array(
 	
