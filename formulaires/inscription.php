@@ -128,7 +128,7 @@
 try
 {
 	// On se connecte à MySQL
-	$bdd = new PDO('mysql:host= localhost; dbname= I_NEED_EAT; charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host= localhost; dbname= I_NEED_EAT; charset=utf8', 'root', 'root');
 }
 catch(Exception $e)
 {
