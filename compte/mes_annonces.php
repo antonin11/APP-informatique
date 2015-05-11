@@ -16,14 +16,7 @@ session_start();
 			<article class="ventes_en_cours">
 				<strong><h1>Ventes en cours</h1></strong>
 				<?php
-				try
-				{
-				$bdd = new PDO('mysql:host=localhost;dbname=I_NEED_EAT; charset=utf8','root','');
-				}
-				catch (Exception $e)
-				{
-					die('erreur : '.$e->getmessage());
-				}
+				include("../bdd/connection.php");
 				$reponse = $bdd->prepare('SELECT * FROM annonces WHERE Auteur = ?');
 				$reponse -> execute(array($_SESSION['pseudo']));
 				while ($donnees = $reponse->fetch())
