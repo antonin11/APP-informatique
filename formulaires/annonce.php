@@ -11,12 +11,12 @@
 
 <h3> Ajouter une nouvelle annonce </h3> 
 
-<form method="post" action="cible_nouvelle_annonce.php">
+<form method="post" action="traitement_annonce.php">
 <p>
 
 Catégorie : <select name="categorie">
-    <option value="choix1">Fruit</option>
-    <option value="choix2">Legume</option>
+    <option value="Fruit">Fruit</option>
+    <option value="Legume">Legume</option>
 	</select> </br></br>
 article : <input type="text" name="article" placeholder="tomate,banane,.." /> </br> </br> 
 Region : <select name="region">
@@ -44,11 +44,24 @@ Region : <select name="region">
     <option value=">Rhône-Alpes">Rhône-Alpes</option>
   
 	</select> </br></br>
-Prix/kg : <input type="text" name="prix_kg" size="1" /> €/kg  Quantité : <input type="text" name="quantite" size="1" /> kg </br> </br>
-titre de l'annonce : <input type="text" name="titre_annonce" /> </br> </br> 
-texte de l'annonce: <input type="text" name="texte_annonce" /> </br> </br>
+Prix/kg : <input type="text" name="prix" size="1" /> €/kg  Quantité : <input type="text" name="quantite" size="1" /> kg </br> </br>
+titre de l'annonce : <input type="text" name="titre" /> </br> </br> 
+texte de l'annonce: <input type="text" name="texte" /> </br> </br>
 Valider ma nouvelle annonce <input type="submit" name="valider"/> 
 
+<?php
+try
+{
+
+	$bdd = new PDO('mysql:host=localhost;dbname=i_need_eat;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+
+        die('Erreur : '.$e->getMessage());
+}
+
+?>
 
 </p>
 </form>
