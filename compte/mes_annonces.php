@@ -25,7 +25,7 @@ session_start();
 					{
 						?>
 						<p>
-							<strong>titre</strong> : <?php echo $donnees['Nom']; ?> <br/>
+							<strong>titre</strong> : <?php echo $donnees['Titre']; ?> <br/>
 						</p>
 						<p>
 							Nombre de membre suivant la vente : <?php echo $donnees['Nbr_visite']; ?>
@@ -55,7 +55,7 @@ session_start();
 					{
 						?>
 						<p>
-							<strong>titre</strong> : <?php echo $donnees['Nom']; ?> <br/>
+							<strong>titre</strong> : <?php echo $donnees['Titre']; ?> <br/>
 						</p>
 						<p>
 							Nombre de membre suivant la vente : <?php echo $donnees['Nbr_visite']; ?>
@@ -71,8 +71,8 @@ session_start();
 					<?php
 					}
 				}
-				?>
 				$reponse->closeCursor();
+				?>
 			</article>
 		</div>
 	<?php
