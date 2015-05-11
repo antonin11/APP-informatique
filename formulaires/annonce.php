@@ -11,7 +11,7 @@
 
 <h3> Ajouter une nouvelle annonce </h3> 
 
-<form method="post" action="cible_nouvelle_annonce.php">
+<form method="post" action="traitement_annonce.php">
 <p>
 
 Catégorie : <select name="categorie">
