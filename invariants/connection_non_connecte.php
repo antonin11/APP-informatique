@@ -2,7 +2,7 @@
 	<p>
 		<form action="../invariants/traitement_connection.php" method="post">
 			<input type="text" name="pseudo" placeholder="pseudo"/>
-			<input type="password" name="pass" placeholder="Mot de passe"/>
+			<input type="password" name="mdp" placeholder="Mot de passe"/>
 			<input type="submit" value="Se connecter"/>
 		</forme>
 	</p>
