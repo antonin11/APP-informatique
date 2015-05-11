@@ -10,9 +10,13 @@
 	}
 	$reponse = $bdd -> prepare('SELECT Mdp FROM utilisateurs WHERE Pseudo = ? ');
 	$reponse -> execute(array($_POST['pseudo']));
-	$donnes = $reponse-> fetch();
+	$donnees = $reponse-> fetch();
 
+<<<<<<< HEAD
 	if( $donnes[0] == $_POST['pass'])
+=======
+	if(isset($donnees[0]) AND $donnees[0] == $_POST['mdp'])
+>>>>>>> origin/master
 		{
 			$_SESSION['pseudo']= $_POST['pseudo'];
 			$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'index.php';
