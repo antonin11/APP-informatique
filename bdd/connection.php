@@ -1,3 +1,4 @@
+<?php 
 $bdd=NULL;
 try
 {
@@ -7,3 +8,4 @@ catch (Exception $e)
 {
 	die('erreur : '.$e->getmessage());
 }
+?>
