@@ -122,6 +122,7 @@
 		
 
 
+
 <?php include("../bdd/connection.php"); ?>
 
 
@@ -149,4 +150,3 @@ $req->execute(array(
 ?>		
 	</body>
 </html>
-
