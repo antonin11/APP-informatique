@@ -21,7 +21,7 @@
 				<?php $reponse = $bdd -> prepare('SELECT * FROM annonces WHERE ?');
 				$reponse = execute(array($_GET['id_annonce']);
 				$donnees = $reponse -> fetch();
-				echo $donnees[0]
+				echo $donnees[0]?>
 </body>
 </head>
 </html>
