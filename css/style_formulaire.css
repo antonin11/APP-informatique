@@ -80,8 +80,17 @@ fieldset
 {
 	position: fixed;
 
+}
+
+h6
+{
+
+	font-size: 15px;
+	color: white;
+	text-shadow : 2px 2px 2px black;
 
 }
+
 body
 {
 	background: url("../images/fruits_et_legumes.jpeg") fixed no-repeat center;

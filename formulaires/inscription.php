@@ -112,7 +112,7 @@
 		<form class="bouton_valider"method="post" action="formulaire_inscription.php">
    			<p=class="J_accepte_les_CGU">
        			<br />
-       				<input type="checkbox" name="CGU" id="CGU" /> 	<label for="CGU">J'accepte les conditions généralles d'utilisation 
+       				<input type="checkbox" name="CGU" id="CGU" /> 	<label for="CGU"> <h6>J'accepte les conditions générales d'utilisation </h6> 
        					</label>
        			<br />
   			</p>
