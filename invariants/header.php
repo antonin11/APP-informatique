@@ -27,10 +27,10 @@
 		</section>
 		<nav>
 			<ul class="menu">
-				<li><a href="#">Offres</a></li>
+				<li><a href="../polices/scqc.php">Offres</a></li>
 				<li><a href="#">Demandes</a></li>
-				<li><a href="#">Poser une annonce</a></li>
-				<li><a href="#">Mes annonces</a></li>
+				<li><a href="../formulaires/annonce.php">Poser une annonce</a></li>
+				<li><a href="../compte/mes_annonces.php">Mes annonces</a></li>
 			</ul>
 		</nav>
 	</header>

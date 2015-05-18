@@ -121,51 +121,32 @@
 		</form>
 		
 
+
+
+<?php include("../bdd/connection.php"); ?>
+
+
 <?php
-	global $bdd;
-   $bdd = mysqli_connect('localhost', 'root', 'root', 'I_NEED_EAT')
+$req = $bdd->prepare('INSERT INTO `I_NEED_EAT`.`Utilisateurs` (`Pseudo`, `Nom`, `Prenom`, `Civilite`, `D_d_N`, `Identifiant`, `M_d_P`, `N_d_T`, `Email`, `Region`, `Ville`, `C_P`, `Adresse`) VALUES (Pseudo, Nom, Prenom, Civilite, D_d_N, Identifiant, M_d_P, N_d_T, Email, Region, Ville, C_P, Adresse)');
+$req->execute(array(
+	
+	'Region' => $_POST['Region'],
+    'Adresse' => $_POST['Adresse'],
+    'C_P' => $_POST['C_P'],
+    'Ville' => $_POST['Ville'],
+    'Email' => $_POST['Email'],
+    'Pseudo' => $_POST['Pseudo'],
+    'Nom' => $_POST['Nom'],
+    'Prenom' => $_POST['Prenom'],
+    'Civilite' => $_POST['Civilite'],
+    'D_d_N' => $_POST ['D_d_N'],
+    'Identifiant' => $_POST['Identifiant'],
+    'M_d_P' => $_POST['M_d_P'],
+    'N_d_T' => $_POST['N_d_T'],
+    'Email' => $_POST ['Email'],
 
-?>
+	));
 
-          <!-- Affichage des données -->
-    
- <?php  // $reponse = $bdd->query('SELECT * FROM Utilisateurs');
-     function db($sqlq){ # $sqlq = sql querry;
-        global $bdd;
-        if(mysqli_query($bdd,$sqlq) === FALSE){
-            die("Error:".mysqli_error($bdd)."</br>Query: ".$sqlq);
-        } else {
-            //mysqli_free_result($sqlq);
-            return $sql;
-        }
-    }
- ?>
-          <!-- Gestion des données -->
-
-<?php 
-      $Region = $_POST['Region'];
-      $Adresse = $_POST['Adresse'];
-      $C_P = $_POST['C_P']; 
-      $Ville = $_POST['Ville'];
-      $Email = $_POST['Email'];
-      $Pseudo = $_POST['Pseudo'];
-      $Nom = $_POST['Nom'];
-      $Prenom = $_POST['Prenom'];
-      $Civilite = $_POST['Civilite'];
-      $D_d_N = $_POST ['D_d_N'];
-      $Identifiant = $_POST['Identifiant'];
-      $M_d_P = $_POST['M_d_P'];
-      $N_d_T = $_POST['N_d_T'];
-      $Email = $_POST ['Email'];
-   	
-
-	$s_query='INSERT INTO Utilisateurs (Pseudo, Nom, Prenom, Civilite, D_d_N, Identifiant, M_d_P, N_d_T, Email, Region, Ville, C_P, Adresse) 
-	VALUES ("'.$Pseudo.'", "'.$Nom.'", "'.$Prenom.'","'.$Civilite.'", "'.$D_d_N.'", "'.$Identifiant.'", "'.$M_d_P.'", "'.$N_d_T.'", "'.$Email.'", "'.$Region.'", "'.$Ville.'", "'.$C_P.'", "'.$Adresse.'")';
-    db($s_query);
-
-?>
-
-		
+?>		
 	</body>
 </html>
-
