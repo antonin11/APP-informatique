@@ -1,0 +1,189 @@
+
+		/*Organisation générale de la page */
+
+#Header		{
+	position: fixed;
+	top: 2%;
+	width: 99%;
+
+}
+
+body {
+
+	background:-webkit-gradient(linear, left bottom, right top, color-stop(0.3, #FDFEFD), color-stop(1.2, #a5cc52)); /*#2FF04F*/
+}
+
+#foot{
+	font-size: 13px;
+	width: 99%;
+	background-color: grey;
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	height: 23%;
+
+}
+
+		/* Fin Organisation générale de la page */
+
+		/* Partie Header */
+
+#Logo		{
+}
+
+	/* Barre de Navigation */
+
+#navigation	{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	background-color: #a5cc52 ;   /* Beau vert   #90b997 */
+	font-size: 16px;
+}
+nav li 		{
+	display: inline-block;
+	
+	border-radius: 6px;
+	
+}
+
+table		{
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #68a0ca;
+	
+}
+
+td			{
+	
+	border: 1px solid #68a0ca;
+	text-align: center;
+	width: 25%;
+}
+
+
+
+	/*  Partie Connexion  */
+
+#Bouton		{
+
+	display: inline-block;
+
+}
+
+#Identifiant{
+	display: inline-block;
+	text-align: left;
+}
+
+
+#Connexion	{
+	position: absolute;
+	right: 0%;
+	top: 5%;
+	border:  1px solid #68a0ca;
+	margin: 2px;
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	background-color: #a5cc52;
+	border-radius: 6px;
+
+}
+
+
+	/* Partie recherche */
+#Recherche	{
+
+	position: absolute;
+	left: 35%;
+	top: 4%;
+	display: inline-block;
+	text-align: center;
+}
+
+		/* Fin Partie Header */
+
+		/* Partie Footer */
+
+#Association{
+
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	margin-left: 4%;
+	
+		}
+
+
+#APropos	{
+
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	position: absolute;
+	left: 33%;
+	right: 30%;
+		}
+
+
+#Aides		{
+
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	position: absolute;
+	right: 4%;
+
+		}
+
+
+		/* Tailles, Polices */
+
+nav a {
+	color: black;
+}
+
+
+		/* CSS du Bouton de Connexion */
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #698fc9), color-stop(1, #689fca));
+	background:-moz-linear-gradient(top, #698fc9 5%, #689fca 100%);
+	background:-webkit-linear-gradient(top, #698fc9 5%, #689fca 100%);
+	background:-o-linear-gradient(top, #698fc9 5%, #689fca 100%);
+	background:-ms-linear-gradient(top, #698fc9 5%, #689fca 100%);
+	background:linear-gradient(to bottom, #698fc9 5%, #689fca 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#698fc9', endColorstr='#689fca',GradientType=0);
+	background-color:#698fc9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:23px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #689fca), color-stop(1, #698fc9));
+	background:-moz-linear-gradient(top, #689fca 5%, #698fc9 100%);
+	background:-webkit-linear-gradient(top, #689fca 5%, #698fc9 100%);
+	background:-o-linear-gradient(top, #689fca 5%, #698fc9 100%);
+	background:-ms-linear-gradient(top, #689fca 5%, #698fc9 100%);
+	background:linear-gradient(to bottom, #689fca 5%, #698fc9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#689fca', endColorstr='#698fc9',GradientType=0);
+	background-color:#689fca;
+}
+.myButton:active {
+}
+
+
